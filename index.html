@@ -5,17 +5,12 @@
     <title>ithrive - do this</title>
 	
 	<style type="text/css">
-	  
-   		body, html {
-			margin: 0;
-			padding: 0;
-			height: 100%;
-		}
+   		body, html {margin: 0; padding: 0; height: 100%;}
+   		
 		body {
  			background: #F7F8FB url(images/bg.png) repeat-x; 
 			/*background: #fff;*/
 		}
-	    
 	    
 	    #top {
 		    height:3px;
@@ -26,6 +21,7 @@
 		}
 		
 		#centerCol {
+			position: relative;
 			margin-left: auto;
 			margin-right: auto;
 			padding-left: 170px;
@@ -45,7 +41,17 @@
 			position: absolute;
 			right: 22px;
 			top:16px;
-		}	
+		}
+
+		div.positioner {
+			position: absolute;
+			left: 826px;
+		}
+
+		.sched {
+			position: fixed;
+			top:116px;
+		}
   </style>
 
   </head>
@@ -53,6 +59,9 @@
   	<div id="centerCol">
 		<img src="images/site.png" alt="" />
 		<img class="burger" src="images/hamburger.png" alt="" />
+		<div class="positioner">
+			<img class="sched" src="images/sched.png" alt="" />
+		</div>	
   	<div>
   	<div id="left_nav">
   		<img src="images/nav.png" alt="" />
