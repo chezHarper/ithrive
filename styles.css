@@ -1,0 +1,61 @@
+
+body, html {margin: 0; padding: 0; height: 100%;}
+
+body {
+		background: #F7F8FB url(images/bg.png) repeat-x; 
+}
+
+#top {
+    height:3px;
+    width:100%;
+    background: #F9B804;
+    position:fixed;
+    top:0;
+}
+
+#centerCol {
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 110px;
+	padding-bottom: 160px;
+	width: 1099px;
+}
+
+#left_nav {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 183px;
+	background: url(images/nav.png) no-repeat;
+	height: 100%;
+}
+
+.burger {
+	position: fixed;
+	right: 22px;
+	top:16px;
+}
+
+.positioner {
+	position: absolute;
+	left: 780px;
+}
+
+.sched {
+	position: fixed;
+	top:116px;
+}
+@media only screen and (max-width: 1300px) {
+	#left_nav {
+		width: 80px;
+		background-image: none;
+		background-color: pink;
+    }
+    #centerCol {
+    	padding-left: 76px;
+    }
+	.positioner {
+		left:736px;
+	}
+}
