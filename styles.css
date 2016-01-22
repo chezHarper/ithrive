@@ -2,7 +2,8 @@
 body, html {margin: 0; padding: 0; height: 100%;}
 
 body {
-		background: #F7F8FB url(images/bg.png) repeat-x; 
+		background: #F7F8FB url(images/bg.png) center -21px repeat-x;
+		position: relative; 
 }
 
 #top {
@@ -22,13 +23,17 @@ body {
 	width: 1099px;
 }
 
-#left_nav {
+.left_nav {
 	position: fixed;
 	left: 0;
 	top: 0;
 	width: 183px;
 	background: url(images/nav.png) no-repeat;
 	height: 100%;
+}
+
+.ccenter {
+	background: url(images/nav-brand.png) no-repeat;
 }
 
 .burger {
@@ -46,16 +51,35 @@ body {
 	position: fixed;
 	top:116px;
 }
+
+.centerlogo {
+	position: absolute;
+	top: 0px;
+	left: -6px;
+}
+
 @media only screen and (max-width: 1300px) {
-	#left_nav {
+	.left_nav, .left_nav.ccenter {
 		width: 80px;
-		background-image: none;
-		background-color: pink;
+		background: url(images/nav-min.png) no-repeat;
     }
+
     #centerCol {
     	padding-left: 76px;
     }
+
+	.withlogo {
+		background-position:0 0;
+	}
+
+	.withlogo #centerCol {
+		padding-top: 21px;
+	}
+
 	.positioner {
 		left:736px;
+	}
+	.centerlogo {
+	top: -49px;
 	}
 }
