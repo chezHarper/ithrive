@@ -6,6 +6,10 @@ body {
 		position: relative; 
 }
 
+body.bighead {
+	background: #F7F8FB url(images/bg2.png) repeat-x;
+}
+
 #top {
     height:3px;
     width:100%;
@@ -82,7 +86,7 @@ body {
 	.centerlogo {
 	top: -45px;
 	}
-	.sched {
+	.withlogo .sched {
     top: 139px;
 	}
 }
