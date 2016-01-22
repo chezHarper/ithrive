@@ -6,10 +6,6 @@ body {
 		position: relative; 
 }
 
-body.bighead {
-	background: #F7F8FB url(images/bg2.png) repeat-x;
-}
-
 #top {
     height:3px;
     width:100%;
@@ -78,6 +74,7 @@ body.bighead {
 
 	.withlogo #centerCol {
 		padding-top: 21px;
+		background: url(images/site_stacked.png) no-repeat;
 	}
 
 	.positioner {
@@ -87,6 +84,15 @@ body.bighead {
 	top: -45px;
 	}
 	.withlogo .sched {
-    top: 139px;
+    position: fixed;
+    top: 138px;
 	}
 }
+
+@media only screen and (max-width: 800px) {
+
+}
+
+
+
+

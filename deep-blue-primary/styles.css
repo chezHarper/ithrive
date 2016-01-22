@@ -6,10 +6,6 @@ body {
 		position: relative; 
 }
 
-body.bighead {
-	background: #F7F8FB url(images/bg2.png) repeat-x;
-}
-
 #top {
     height:3px;
     width:100%;
