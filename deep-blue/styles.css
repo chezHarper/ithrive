@@ -32,12 +32,12 @@ body.bighead {
 	left: 0;
 	top: 0;
 	width: 183px;
-	background: url(images/nav.png) no-repeat;
+	background: url(images/nav.png?=v2) no-repeat;
 	height: 100%;
 }
 
 .ccenter {
-	background: url(images/nav-brand.png) no-repeat;
+	background: url(images/nav-brand.png?=v2) no-repeat;
 }
 
 .burger {
@@ -65,7 +65,10 @@ body.bighead {
 @media only screen and (max-width: 1300px) {
 	.left_nav, .left_nav.ccenter {
 		width: 80px;
-		background: url(images/nav-min.png) no-repeat;
+		background: url(images/nav-min.png?=v2) no-repeat;
+    }
+    .left_nav.ccenter {
+    	background: url(images/nav-brand-min.png) no-repeat;
     }
 
     #centerCol {
